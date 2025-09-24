@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>MAKAUT SGPA to CGPA Converter | Accurate & Fast</title>
+    <meta name="description" content="The most accurate SGPA to CGPA converter for MAKAUT University students. Instantly calculate your CGPA with our easy-to-use, mobile-friendly tool. Follows the official MAKAUT formula.">
+    <meta name="keywords" content="MAKAUT SGPA to CGPA, SGPA to CGPA converter, MAKAUT CGPA calculator, MAKAUT university, CGPA formula, WBUT CGPA, MAKAUT results">
+    <meta name="author" content="makautsgpatocgpa.makaut.info">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://makautsgpatocgpa.makaut.info/">
+    
+    <!-- Favicon -->
+    <!-- An SVG data URI is used here for simplicity. No external file is needed. -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231E40AF'/%3E%3Cpath d='M25 75 V25 H35 L50 50 L65 25 H75 V75 H65 V40 L55 60 H45 L35 40 V75 H25 Z' fill='white'/%3E%3C/svg%3E" type="image/svg+xml">
+    <!-- For Apple devices, you should create a 180x180px PNG file named apple-touch-icon.png and place it in the root directory of your site -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://makautsgpatocgpa.makaut.info/">
+    <meta property="og:title" content="MAKAUT SGPA to CGPA Converter | Accurate & Fast">
+    <meta property="og:description" content="The most accurate SGPA to CGPA converter for MAKAUT University students. Instantly calculate your CGPA with our easy-to-use, mobile-friendly tool.">
+    <meta property="og:image" content="https://placehold.co/1200x630/1e40af/ffffff?text=MAKAUT+SGPA%5Cnto%5CnCGPA+Converter">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://makautsgpatocgpa.makaut.info/">
+    <meta property="twitter:title" content="MAKAUT SGPA to CGPA Converter | Accurate & Fast">
+    <meta property="twitter:description" content="The most accurate SGPA to CGPA converter for MAKAUT University students. Instantly calculate your CGPA with our easy-to-use, mobile-friendly tool.">
+    <meta property="twitter:image" content="https://placehold.co/1200x630/1e40af/ffffff?text=MAKAUT+SGPA%5Cnto%5CnCGPA+Converter">
+
+    <!-- Other Meta Tags -->
+    <link rel="alternate" hreflang="en-in" href="https://makautsgpatocgpa.makaut.info/" />
+    <!-- Add your Google Search Console verification tag here -->
+    <!-- <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE" /> -->
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        .card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .btn {
+            transition: all 0.3s ease;
+        }
+        .btn-primary {
+            background-color: #1E40AF; /* Dark Blue */
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: #1D4ED8; /* Slightly lighter blue */
+        }
+        .btn-secondary {
+            background-color: #6B7280; /* Gray */
+            color: white;
+        }
+        .btn-secondary:hover {
+            background-color: #4B5563;
+        }
+        /* For AdSense compatibility, ensure content is not obscured */
+        .ad-placeholder {
+            min-height: 90px;
+            background-color: #f0f0f0;
+            border: 1px dashed #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+    
+    <!-- FAQ Schema for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "What is SGPA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "SGPA stands for Semester Grade Point Average. It is the weighted average of the grade points obtained in all the subjects of a particular semester."
+        }
+      },{
+        "@type": "Question",
+        "name": "What is CGPA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "CGPA stands for Cumulative Grade Point Average. It represents the overall academic performance across all semesters completed by the student so far."
+        }
+      },{
+        "@type": "Question",
+        "name": "How is CGPA calculated from SGPA for MAKAUT?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The CGPA is the simple average of the SGPA's from all semesters. For example, if you have completed 4 semesters, you add the SGPA of all four semesters and divide the sum by 4."
+        }
+      },{
+        "@type": "Question",
+        "name": "Is this tool accurate for MAKAUT university?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, this tool uses the official formula provided by the Maulana Abul Kalam Azad University of Technology (MAKAUT) to calculate the CGPA from SGPA scores, ensuring accuracy."
+        }
+      }]
+    }
+    </script>
+</head>
+<body class="gradient-bg text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4">
+            <h1 class="text-2xl sm:text-3xl font-bold text-blue-900 text-center">MAKAUT SGPA to CGPA Converter</h1>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <div class="max-w-3xl mx-auto">
+
+            <!-- Intro Section -->
+            <section class="text-center mb-8">
+                <p class="text-lg text-gray-700">Quickly and accurately convert your semester-wise SGPA into an overall CGPA. Just enter your SGPA for each semester below.</p>
+            </section>
+            
+            <!-- AdSense Placeholder - Top -->
+            <div class="ad-placeholder text-center">Ad Placeholder (e.g., 728x90)</div>
+
+            <!-- Converter Tool Card -->
+            <div class="card p-6 sm:p-8">
+                <h2 class="text-xl font-semibold mb-6 text-center">Enter Your Semester SGPA's</h2>
+                
+                <div id="sgpa-inputs" class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                    <!-- Semester 1 -->
+                    <div class="flex flex-col">
+                        <label for="sem1" class="mb-1 font-medium text-gray-600">Semester 1 SGPA</label>
+                        <input type="number" id="sem1" name="sgpa" step="0.01" min="0" max="10" placeholder="e.g., 8.75" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                     <!-- Semester 2 -->
+                    <div class="flex flex-col">
+                        <label for="sem2" class="mb-1 font-medium text-gray-600">Semester 2 SGPA</label>
+                        <input type="number" id="sem2" name="sgpa" step="0.01" min="0" max="10" placeholder="e.g., 9.10" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="flex justify-center mb-6">
+                    <button id="add-semester" class="text-blue-600 hover:text-blue-800 font-medium transition">
+                        + Add Another Semester
+                    </button>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button id="calculate" class="btn btn-primary w-full sm:w-auto px-8 py-3 rounded-lg font-bold text-lg">Calculate CGPA</button>
+                    <button id="reset" class="btn btn-secondary w-full sm:w-auto px-8 py-3 rounded-lg font-bold text-lg">Reset</button>
+                </div>
+
+                <!-- Result Display -->
+                <div id="result" class="mt-8 text-center">
+                    <!-- Result will be injected here -->
+                </div>
+            </div>
+            
+            <!-- AdSense Placeholder - Middle -->
+            <div class="ad-placeholder text-center">Ad Placeholder (e.g., 300x250 or responsive)</div>
+
+            <!-- Explanation Section -->
+            <div class="card p-6 sm:p-8 mt-8">
+                <h2 class="text-2xl font-bold mb-4 text-center">How It Works</h2>
+                <div class="text-gray-700 space-y-4">
+                    <p>This tool calculates your Cumulative Grade Point Average (CGPA) based on the Semester Grade Point Averages (SGPA) you provide. The calculation follows the official method prescribed by MAKAUT (formerly WBUT).</p>
+                    <h3 class="text-xl font-semibold">The Formula</h3>
+                    <p class="text-center bg-gray-100 p-4 rounded-lg">
+                        <span class="font-bold text-lg">CGPA = (Sum of all Semester SGPA's) / (Total Number of Semesters)</span>
+                    </p>
+                    <p>For instance, if you have completed three semesters with SGPA scores of 8.5, 9.0, and 8.2, your CGPA would be calculated as:</p>
+                    <p class="text-center font-mono bg-gray-100 p-4 rounded-lg">(8.5 + 9.0 + 8.2) / 3 = 25.7 / 3 = 8.57</p>
+                    <p>Your CGPA is <strong>8.57</strong>.</p>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="card p-6 sm:p-8 mt-8">
+                 <h2 class="text-2xl font-bold mb-6 text-center">Frequently Asked Questions (FAQ)</h2>
+                 <div class="space-y-6">
+                     <div>
+                         <h3 class="font-semibold text-lg">1. What is the difference between SGPA and CGPA?</h3>
+                         <p class="text-gray-700 mt-1">SGPA (Semester Grade Point Average) measures your performance in a single semester. CGPA (Cumulative Grade Point Average) is the average of all your SGPA scores, reflecting your overall academic performance across all semesters.</p>
+                     </div>
+                     <div>
+                         <h3 class="font-semibold text-lg">2. What is the 10-point grading scale in MAKAUT?</h3>
+                         <p class="text-gray-700 mt-1">MAKAUT uses a 10-point grading scale where each letter grade (O, E, A, B, C, D, F) corresponds to a grade point. An 'O' (Outstanding) is 10 points, while an 'F' (Fail) is 0 points.</p>
+                     </div>
+                     <div>
+                         <h3 class="font-semibold text-lg">3. How many semesters can I add?</h3>
+                         <p class="text-gray-700 mt-1">This tool allows you to add up to 8 semesters, covering a standard 4-year B.Tech program. The calculation adjusts based on the number of fields you fill in.</p>
+                     </div>
+                      <div>
+                         <h3 class="font-semibold text-lg">4. Why is my CGPA important?</h3>
+                         <p class="text-gray-700 mt-1">Your CGPA is a key indicator of your academic standing. It is often used by companies for placements, by universities for higher studies admissions, and for scholarship eligibility.</p>
+                     </div>
+                 </div>
+            </div>
+
+            <!-- Disclaimer -->
+            <div class="text-center mt-8 text-sm text-gray-600">
+                <p><strong>Disclaimer:</strong> This tool is for estimation purposes only. Always refer to your official mark sheets and transcripts issued by MAKAUT for the final and accurate CGPA.</p>
+            </div>
+            
+        </div>
+    </main>
+    
+    <!-- Result Modal -->
+    <div id="result-modal" class="fixed inset-0 bg-black bg-opacity-60 z-50 hidden items-center justify-center p-4">
+        <div class="bg-white rounded-xl shadow-2xl p-6 sm:p-8 w-full max-w-md mx-auto relative card text-center transform transition-all" id="modal-card">
+             <button id="close-modal" class="absolute top-2 right-3 text-gray-400 hover:text-gray-800 text-3xl font-bold transition">&times;</button>
+             <div id="modal-content" class="mt-4">
+                 <!-- Modal result will be injected here -->
+             </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="bg-white mt-12 py-6 shadow-inner">
+        <div class="container mx-auto px-4 text-center text-gray-600">
+            <div class="flex justify-center gap-6 mb-4">
+                <a href="https://www.facebook.com/makautinfo" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" class="text-gray-500 hover:text-green-500 transition-colors duration-300">
+                    <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.75 13.96c.27.14.48.26.69.43.24.19.43.43.58.7.2.33.29.7.29 1.1 0 .43-.1.83-.31 1.2-.21.36-.52.66-.92.9-.4.24-.88.36-1.43.36-.63 0-1.28-.18-1.93-.53s-1.25-.9-1.8-1.58c-.56-.68-1.03-1.45-1.4-2.3-.37-.85-.56-1.72-.56-2.6 0-1.02.2-1.92.6-2.7.4-.78 1-1.42 1.74-1.92.74-.5 1.58-.75 2.52-.75.43 0 .83.06 1.2.18.37.12.68.3.92.55.24.25.4.55.48.9.08.35.05.7-.1 1.05-.14.35-.38.6-.7.75-.32.15-.68.18-1.06.09-.38-.09-.68-.24-.9-.45-.22-.21-.33-.45-.33-.73 0-.17.02-.33.08-.47s.15-.27.28-.37c.13-.1.28-.15.46-.15H17c.21 0 .39.06.54.19.15.13.22.29.22.48s-.06.35-.18.48c-.12.13-.27.23-.45.29l-1.1.45c-.23.09-.43.2-.6.33-.18.13-.33.28-.45.45-.12.17-.18.35-.18.53 0 .18.06.35.18.49s.27.27.45.38zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/makautinfo" target="_blank" rel="noopener noreferrer" aria-label="Follow on Instagram" class="text-gray-500 hover:text-pink-500 transition-colors duration-300">
+                     <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2c2.72 0 3.05.01 4.12.06 1.06.05 1.79.22 2.42.47.65.25 1.13.59 1.62 1.08.48.48.83.97 1.08 1.62.25.63.42 1.36.47 2.42.05 1.07.06 1.4.06 4.12s-.01 3.05-.06 4.12c-.05 1.06-.22 1.79-.47 2.42-.25.65-.59 1.13-1.08 1.62-.48.48-.97.83-1.62 1.08-.63.25-1.36.42-2.42.47-1.07.05-1.4.06-4.12.06s-3.05-.01-4.12-.06c-1.06-.05-1.79-.22-2.42-.47-.65-.25-1.13-.59-1.62-1.08-.48-.48-.83-.97-1.08-1.62-.25-.63-.42-1.36-.47-2.42-.05-1.07-.06-1.4-.06-4.12s.01-3.05.06-4.12c.05-1.06.22-1.79.47-2.42.25-.65.59-1.13 1.08-1.62.49-.49.97-.83 1.62-1.08.63-.25 1.36-.42 2.42-.47C8.95 2.01 9.28 2 12 2zm0 1.8c-2.69 0-3 .01-4.05.06-1 .05-1.5.21-1.9.38-.45.18-.79.42-1.14.77-.35.35-.59.69-.77 1.14-.17.4-.33.9-.38 1.9C3.81 9 3.8 9.31 3.8 12s.01 3 .06 4.05c.05 1 .21 1.5.38 1.9.18.45.42.79.77 1.14.35.35.69.59 1.14.77.4.17.9.33 1.9.38 1.05.05 1.36.06 4.05.06s3-.01 4.05-.06c1-.05 1.5-.21 1.9-.38.45-.18.79-.42 1.14-.77.35-.35.59-.69.77 1.14.17-.4.33-.9.38-1.9.05-1.05.06-1.36.06-4.05s-.01-3-.06-4.05c-.05-1-.21-1.5-.38-1.9-.18-.45-.42-.79-.77-1.14-.35-.35-.69-.59-1.14-.77-.4-.17-.9-.33-1.9-.38C15 3.81 14.69 3.8 12 3.8zm0 4.55c-2.28 0-4.12 1.85-4.12 4.12S9.72 16.6 12 16.6s4.12-1.85 4.12-4.12S14.28 8.35 12 8.35zm0 6.67c-1.41 0-2.55-1.14-2.55-2.55s1.14-2.55 2.55-2.55 2.55 1.14 2.55 2.55-1.14 2.55-2.55 2.55zm4.82-6.77c-.53 0-.97-.43-.97-.97s.43-.97.97-.97.97.43.97.97-.44.97-.97.97z"/>
+                    </svg>
+                </a>
+                <a href="https://www.x.com/makautinfo" target="_blank" rel="noopener noreferrer" aria-label="Follow on X" class="text-gray-500 hover:text-gray-800 transition-colors duration-300">
+                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                </a>
+            </div>
+            <p>&copy; <span id="year"></span> Voltexity. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sgpaInputsContainer = document.getElementById('sgpa-inputs');
+            const addSemesterBtn = document.getElementById('add-semester');
+            const calculateBtn = document.getElementById('calculate');
+            const resetBtn = document.getElementById('reset');
+            const resultDiv = document.getElementById('result');
+
+            // Modal elements
+            const resultModal = document.getElementById('result-modal');
+            const modalContent = document.getElementById('modal-content');
+            const closeModalBtn = document.getElementById('close-modal');
+
+            let semesterCount = 2;
+
+            addSemesterBtn.addEventListener('click', () => {
+                if (semesterCount >= 8) {
+                    addSemesterBtn.style.display = 'none';
+                    return;
+                }
+                semesterCount++;
+                const newField = document.createElement('div');
+                newField.classList.add('flex', 'flex-col');
+                newField.innerHTML = `
+                    <label for="sem${semesterCount}" class="mb-1 font-medium text-gray-600">Semester ${semesterCount} SGPA</label>
+                    <input type="number" id="sem${semesterCount}" name="sgpa" step="0.01" min="0" max="10" placeholder="e.g., 8.50" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                `;
+                sgpaInputsContainer.appendChild(newField);
+                
+                if (semesterCount === 8) {
+                    addSemesterBtn.style.display = 'none';
+                }
+            });
+
+            const showModalWithResult = (cgpa) => {
+                modalContent.innerHTML = `
+                    <div class="bg-green-50 text-green-900 p-4 rounded-lg">
+                        <svg class="w-16 h-16 mx-auto mb-3 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <h3 class="text-lg font-semibold">Your Calculated CGPA is:</h3>
+                        <p class="text-5xl font-extrabold mt-2 tracking-tight">${cgpa.toFixed(2)}</p>
+                    </div>
+                `;
+                resultModal.classList.remove('hidden');
+                resultModal.classList.add('flex');
+            };
+
+            const closeModal = () => {
+                resultModal.classList.add('hidden');
+                resultModal.classList.remove('flex');
+            };
+
+            calculateBtn.addEventListener('click', () => {
+                const sgpaFields = document.querySelectorAll('input[name="sgpa"]');
+                let totalSgpa = 0;
+                let validSemesters = 0;
+                let hasError = false;
+
+                sgpaFields.forEach(field => {
+                    field.classList.remove('border-red-500'); // Reset error state
+                    const value = field.value.trim();
+                    if (value !== '') {
+                        const sgpa = parseFloat(value);
+                        if (!isNaN(sgpa) && sgpa >= 0 && sgpa <= 10) {
+                            totalSgpa += sgpa;
+                            validSemesters++;
+                        } else {
+                            field.classList.add('border-red-500');
+                            hasError = true;
+                        }
+                    }
+                });
+                
+                resultDiv.innerHTML = ''; // Clear previous result
+
+                if (hasError) {
+                    resultDiv.innerHTML = `<p class="text-red-600 font-bold">Please enter valid SGPA values (0-10) in the highlighted fields.</p>`;
+                    return;
+                }
+
+                if (validSemesters === 0) {
+                    resultDiv.innerHTML = `<p class="text-red-600 font-bold">Please enter SGPA for at least one semester.</p>`;
+                    return;
+                }
+                
+                const cgpa = totalSgpa / validSemesters;
+                
+                // Show result in modal instead of inline
+                showModalWithResult(cgpa);
+            });
+            
+            resetBtn.addEventListener('click', () => {
+                const sgpaFields = document.querySelectorAll('input[name="sgpa"]');
+                sgpaFields.forEach(field => {
+                    field.value = '';
+                    field.classList.remove('border-red-500');
+                });
+                resultDiv.innerHTML = '';
+                closeModal(); // Close modal on reset
+                
+                // Reset to initial 2 semesters
+                sgpaInputsContainer.innerHTML = `
+                    <div class="flex flex-col">
+                        <label for="sem1" class="mb-1 font-medium text-gray-600">Semester 1 SGPA</label>
+                        <input type="number" id="sem1" name="sgpa" step="0.01" min="0" max="10" placeholder="e.g., 8.75" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div class="flex flex-col">
+                        <label for="sem2" class="mb-1 font-medium text-gray-600">Semester 2 SGPA</label>
+                        <input type="number" id="sem2" name="sgpa" step="0.01" min="0" max="10" placeholder="e.g., 9.10" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                `;
+                semesterCount = 2;
+                addSemesterBtn.style.display = 'inline-block';
+            });
+            
+            // Event listeners for closing the modal
+            closeModalBtn.addEventListener('click', closeModal);
+            resultModal.addEventListener('click', (event) => {
+                // If the click is on the dark overlay, close the modal
+                if (event.target === resultModal) {
+                    closeModal();
+                }
+            });
+
+            // Set footer year
+            document.getElementById('year').textContent = new Date().getFullYear();
+        });
+    </script>
+
+</body>
+</html>
+
+
+
+
